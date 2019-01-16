@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/style/reset.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/style/style.css" />
     <script src="../assets/script/inge.js"></script>
 </head>
@@ -22,19 +22,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                      <a class="nav-link" href="../ingen.html">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="../ingen.html">Home </a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="./howto.html">How to</a>
                     </li>
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="./filegen.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         File Generators:
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="./gameusersettings.html">Game User Settings</a>
-                        <a class="dropdown-item" href="./gameini.html">Game Ini</a>
+                        <a class="dropdown-item" href="./gameini.html">Game Ini <span class="sr-only">(current)</span></a>
                       </div>
                     </li>
                   </ul>
@@ -46,10 +46,28 @@
               </nav>
 
     <div id="content" class="col-sm-12 mt-2">
-        <div id="jumbo" class="jumbotron com-sm-10 shadow-sm">
+        <div id="jumbo" class="jumbotron col-sm-8 shadow-sm bg-dark">
+          <h3 class="text-center col-sm-10 text-info bg-dark p-2 m-1">Upload your Game.ini</h3>
+            <div class="input-group mt-2">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text rounded" id="inputGroupFileAddon01">Upload</span>
+                  </div>
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                  </div>
+                </div>
+        </div>
+
+        <div id="jumbo" class="jumbotron col-sm-8 shadow-sm bg-dark">
+
+        </div>
+
+        <div id="jumbo" class="jumbotron col-sm-8 shadow-sm bg-dark">
 
         </div>
     </div>
+
     
 </body>
 </html>
